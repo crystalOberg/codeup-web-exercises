@@ -1,0 +1,144 @@
+.fancy-header {
+    color: purple;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 50px;
+}
+.div2 {
+    float: right;
+    font-size: 16px;
+    position: bottom;
+
+}
+h3 {
+    text-decoration: underline;
+    text-align: left;
+    text-decoration: darkorchid;
+    font-size: 30px;
+}
+.div1 {
+    float: left;
+    font-size: 16px;
+}
+p  {
+    font-size: 30px;
+    font-family: 'Brush Script MT', cursive;
+}
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.image {
+    display: block;
+    margin-left: 5px;
+    margin-right: auto;
+    height: 15%;
+    width: 15%;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+body {
+    font-family: Luminari;
+    color: #770077;
+    border-style: dotted;
+    border-width: thick;
+    font-size: 30px;
+    word-spacing: initial;
+}
+
+img {
+    max-width: 100%
+}
+
+.image {
+    flex-basis: 40%
+}
+
+.text {
+    font-size: 20px;
+    padding-left: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+tr {
+    border: solid;
+    border-width: 2px;
+    text-align: center;
+    font-size: 30px;
+}
+.back-to-top {
+    position: absolute;
+    font-weight: bold;
+    font-size: 30px;
+    left: 27rem;
+    bottom: -60rem;
+
+}
+h2 {
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    font-size: 50px;
+}
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #FFC0CB; }
+    40%  { background: hotpink; }
+    60%  { background: #880088; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+}
+
+body {
+    background: #33CCCC; /* Fallback */
+    animation: color 9s infinite linear;
+    text-align: center;
+    padding: 2em;
+    animation-direction:;
+
+
+}
+ul {
+    float: left;
+    text-align: left;
+}
+.horizontal-text {
+    text-decoration: underline;
+    color: gold;
+    text-align: center;
+    font-size: 25px;
+}
+li {
+    font-size: 30px;
+}
+header {
+    text-decoration: underline;
+    color: purple;
+    text-align: center;
+    font-size: 50px;
+}
+
+#container .social-media, h4 {
+
+/* unvisited link (:unvisited) */
+ *:link {
+     color: red;
+ }
+/* visited link (:visited) */
+*:visited {
+    color: black;
+}
+/* mouse hover link (:hover) */
+*:hover {
+    color: blue;
+}
+/* active/selected link (:active) */
+*:active {
+    color: green;
+}
