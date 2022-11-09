@@ -12,3 +12,26 @@
     font-weight: bold;
     font-size: 1.5em;
 }
+.navbar {
+    display: inline-block;
+}
+
+.btn-outline-success {
+    background-color: white;
+    outline-color: #0099ff;
+    outline-style: solid;
+    color: #0099ff;
+}
+.title {
+    font-size: 30px;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+}
+.bi-person-fill {
+    background-color: #0099ff;
+    font-style: normal;
+    position: relative;
+}
