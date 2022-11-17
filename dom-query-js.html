@@ -5,11 +5,11 @@
     <title>DOM: Query and Modify</title>
 </head>
 <body>
-<button id="btn1">Click Me!</button>
-<button id="btn2">Change Color of Text</button>
-<button id="btn3">Change Text</button>
-<button id="btn4">Mission Status</button>
-<button id="btn5">Change Color Pattern</button>
+<button id="btn1" style="border-color: #0fb784">Click Me!</button>
+<button id="btn2" style="border-color: #FFC0CB">Change Color of Text</button>
+<button id="btn3" style="border-color: #33CC36">Change Text</button>
+<button id="btn4" style="border-color: #660066">Mission Status</button>
+<button id="btn5" style="border-color: gold"> Change Color Pattern</button>
 
 <h1 id="main-header">Hello World!</h1>
 <ul>
@@ -50,6 +50,7 @@
            }
         var btn3 = document.getElementById('btn3');
         btn3.addEventListener('click', changeText);
+
 
         // TODO: Uncomment the next line and get the sub header element by id
         var subHeader = document.getElementById('sub-header');
