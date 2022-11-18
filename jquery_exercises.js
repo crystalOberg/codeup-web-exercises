@@ -15,11 +15,24 @@
 //     $("h1, p, li").css("background-color", "yellow");
 //
 // });
+$('document').ready(function(){
+    $('li').hover(
+        function() {
+            $(this).css('color', 'red');
+        },
+        function() {
+            $(this).css('color', 'black');
+        })
+});
 
-$(document).ready(function(){
-    $("li").hover(function(){
-        $(this).css("color", "red");
-    }, function(){
-        $(this).css("color", "black");
-    });
+$('document').ready(function(){
+$("#lights-out").click(function() {
+    $("h1").css("background-color", "black");
+})
+});
+
+$('document').ready(function(){
+    $("#size").dblclick(function() {
+        $("p").css("font-size", "18px");
+    })
 });
