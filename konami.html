@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konami Code</title>
+  <script src="js/jquery.js"></script>
+  <script src="konami.js"></script>
+  <script src="konami.css"></script>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+<body>
+<h1>
+  <span
+          class="txt-rotate flash"
+          data-period="2000"
+          data-rotate='[ "Enter Konami Code..." ]' style="background-color: yellow"></span>
+</h1>
+
+  <img class='toasty-img' src='https://s3-eu-west-1.amazonaws.com/wdildnproject2/toasty.png'>
+<style>
+  img {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 7s;
+  }
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+</style>
+
+<p class='code' style="font-weight: bold; font-size: 20px; border-style: solid; border-color: black; margin: auto; background-color: dodgerblue">&#11014; &#11014; &#11015; &#11015; &#11013; &#10145; &#11013; &#10145; B A</p>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<br>
+<iframe src="https://giphy.com/embed/39zbpCQocXLi0" width="480" height="359" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/video-games-arcades-mortal-kombat-ii-39zbpCQocXLi0"></a></p>
+</body>
+</html>

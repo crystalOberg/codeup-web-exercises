@@ -22,13 +22,14 @@ $('document').ready(function(){
         },
         function() {
             $(this).css('color', 'black');
-        })
+        });
 
-    $("#lights-out").click(function() {
+        $("#lights-out").click(function() {
         $("h1").css("background-color", "black");
     })
+
     $("#size").dblclick(function() {
         $("p").css("font-size", "18px");
     })
-});g
+});
 
