@@ -1,0 +1,35 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: Luminari;
+    font-weight: bold;
+    font-size: 40px;
+    border-width: 20px;
+    border-style: groove;
+    border-color: gold;
+    background-color: orangered;
+}
+
+
+p {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background-color: orangered;
+    border-color: gold;
+    border-style: groove;
+    border-width: 20px;
+    font-family: Luminari;
+}
+
+iframe {
+    width: 900px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+body {
+    background-image: url("https://assets-prd.ignimgs.com/2021/12/07/mk-1992-1638899209756.jpg");
+    background-repeat: round;
+}
