@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery_Faq</title>
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
+        .yellow-bg {
+
+        }
+    </style>
+</head>
+<body>
+<p>Cryptids of Cornwall:</p>
+
+<dl>
+  <dt>Beast of Bodmin</dt>
+  <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+  <dt>Morgawr</dt>
+  <dd class="invisible">A sea serpent.</dd>
+
+  <dt>Owlman</dt>
+  <dd>A giant owl-like creature.</dd>
+</dl>
+<script>
+    $("#btn-1").click(function (e) {
+        e.preventDefault();
+        $("dd").toggleClass("invisible");
+    });
+
+  $("dt").click(function () {
+    $(this).toggleClass("highlighter")
+  });
+
+    $("#btn-2").click(function (e) {
+        $("ul").each(function () {
+            $(this).children().last().toggleClass("yellow-bg");
+        });
+    });
+
+    $("h3").click(function () {
+        $(this).next().children().css("font-weight", "bold");
+    });
+
+
+        $("li").each(function () {
+            $(this).parent().children().first().css("color", "blue");
+        });
+
+</script>
+</body>
+<footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</footer>
+</html>
