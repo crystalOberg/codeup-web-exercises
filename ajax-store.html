@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Online Store</title>
+
 </head>
 <body>
 
@@ -18,35 +19,51 @@
     </thead>
     <tbody id="insertProducts"></tbody>
 </table>
-
-<input type="button" id="product-list" value="Load Data"></input>
+<button id="refresh-btn">Refresh</button>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="data/inventory.json"></script>
-<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
 (function() {
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
-                    $.get('inventory.json').done(function(data) {
-                        console.log(data);
-});
+
+    $(document).ready(function() {
+        "use strict";
+        // TODO: Create an AJAX GET request for the file under data/inventory.json
+
+        function refreshFromJson() {
+            $.get('data/inventory.json').done(function(tools) {
+                $('#insertProducts').html('');
+                for (var i = 0; i < tools.length; i += 1) {
+                    $('#insertProducts').append(buildToolHTML(tools[i]));
+                }
+            });
+        }
+
+
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
+    //
+    function buildToolHTML(tool) {
+        var html = '';
+        html += '<tr>\n' +
+            '            <td>' + tool.title + '</td>\n' +
+            '            <td>' + tool.quantity + '</td>\n' +
+            '            <td>' + tool.categories.join(', ') + '</td>\n' +
+            '            <td>' + tool.price + '</td>\n' +
+            '        </tr>';
+        return html;
+    }
 
-                        $.ajax('inventory.json').done(function(data, products) {
-                          $('#Products').json('<th> Title: ' + jd.title + '</th>');
-                          $('#Products').append('<th> Quantity: ' + jd.quantity + '</th>');
-                          $('#products').append('<th> Categories: ' + jd.categories + '</th>');
-                          $('#products').append('<th> Price: ' + jd.price + '</th>');
-                    })
-                       console.log(data);
+    $('#refresh-btn').click(refreshFromJson);
+
+    refreshFromJson();
+});
+
 })();
-
-
 </script>
-<script src="data/inventory.json"></script>
+
 </body>
 </html>
