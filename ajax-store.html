@@ -35,7 +35,7 @@
             $.get('data/inventory.json').done(function(tools) {
                 $('#insertProducts').html('');
                 for (var i = 0; i < tools.length; i += 1) {
-                    $('#insertProducts').append(buildToolHTML(tools[i]));
+                    $('#products').append(buildToolHTML(tools[i]));
                 }
             });
         }
