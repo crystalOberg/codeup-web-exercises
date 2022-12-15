@@ -13,23 +13,28 @@
 //     alert($("h1").html());
 //
 //     $("h1, p, li").css("background-color", "yellow");
-//
+
 // });
-$('document').ready(function(){
-    $('li').hover(
-        function() {
-            $(this).css('color', 'red');
-        },
-        function() {
-            $(this).css('color', 'black');
-        });
+// $('document').ready(function(){
+//     $('li').hover(
+//         function() {
+//             $(this).css('color', 'red');
+//         },
+//         function() {
+//             $(this).css('color', 'black');
+//         });
+//
+//     $("#lights-out").click(function() {
+//         $("h1").css("background-color", "black");
+//     })
+//
+//     $("#size").dblclick(function() {
+//         $("p").css("font-size", "18px");
+//     })
+// });
 
-    $("#lights-out").click(function() {
-        $("h1").css("background-color", "black");
-    })
-
-    $("#size").dblclick(function() {
-        $("p").css("font-size", "18px");
-    })
+$(document).ready(function(){
+    $("").load(function(){
+        alert("loaded.");
+    });
 });
-
